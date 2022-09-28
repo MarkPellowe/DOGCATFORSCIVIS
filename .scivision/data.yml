@@ -1,0 +1,11 @@
+sources:
+  catdog:
+      description: It's cats and dogs. What could be simpler, buddy?
+      origin: 
+      driver: intake_xarray.image.ImageSource
+      args:
+        urlpath: ["https://zenodo.org/record/7108408/files/oxford_pets.zip?download=1"]
+        chunks: {}
+        storage_options: {'anon': True}
+        coerce_shape: [1000, 1000]
+        exif_tags: True
