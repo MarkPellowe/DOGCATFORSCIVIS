@@ -1,4 +1,9 @@
 sources:
+  test_image:
+      description: Load a single Cat
+      driver: intake_xarray.image.ImageSource
+      args:
+        urlpath: 'https://commons.wikimedia.org/wiki/File:Cat_November_2010-1a.jpg'
   catdog:
       description: It's cats and dogs. What could be simpler, buddy?
       origin: 
